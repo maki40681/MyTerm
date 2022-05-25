@@ -6,6 +6,7 @@ include config.mk
 
 SRC = st.c x.c
 OBJ = $(SRC:.c=.o)
+PREFIX = $(HOME)/.local
 
 all: options st
 
@@ -15,8 +16,8 @@ options:
 	@echo "LDFLAGS = $(STLDFLAGS)"
 	@echo "CC      = $(CC)"
 
-config.h:
-	cp config.def.h config.h
+#config.h:
+#	cp config.def.h config.h
 
 .c.o:
 	$(CC) $(STCFLAGS) -c $<
