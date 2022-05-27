@@ -12,6 +12,8 @@ static char *font2[] = { "JoyPixels:pixelsize=24:antialias=true:autohint=true" }
 static char *font = "FantasqueSansMono Nerd Font:pixelsize=24:antialias=true:autohint=true";
 static char ascii_printable[] = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
 
+static const char *bgfile = "/home/triplek/.cache/st_wallpaper.ff";
+
 wchar_t *worddelimiters = L" ";
 
 int allowaltscreen = 1;
@@ -23,6 +25,8 @@ const int boxdraw_braille = 0;
 
 static int borderpx = 5;
 static int bellvolume = 0;
+
+static const int pseudotransparency = 0;
 
 unsigned int tabspaces = 8;
 unsigned int defaultfg = 7;
