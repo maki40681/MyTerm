@@ -55,7 +55,7 @@ static double minlatency = 8;
 static double maxlatency = 33;
 
 static const char *colorname[] = {
-	[0] = "#15171c",
+	[0] = "#2d2d2d",
       	[1] = "#f2777a",
         [2] = "#99cc99",
         [3] = "#ffcc66",
@@ -64,7 +64,7 @@ static const char *colorname[] = {
         [6] = "#66cccc",
         [7] = "#d3d0c8",
                          
-        [8] = "#555555",
+        [8] = "#747369",
         [9] = "#f2777a",
         [10] = "#99cc99",
         [11] = "#ffcc66",
