@@ -9,10 +9,10 @@ char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
 static char *shell = "/bin/sh";
 static char *font2[] = { "JoyPixels:pixelsize=24:antialias=true:autohint=true" };
-static char *font = "FantasqueSansMono Nerd Font:pixelsize=24:antialias=true:autohint=true";
+static char *font = "FantasqueSansM Nerd Font:pixelsize=24:antialias=true:autohint=true";
 static char ascii_printable[] = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
 
-static const char *bgfile = "/home/triplek/.cache/st_wallpaper.ff";
+static const char *bgfile = "/home/maki40681/.cache/st_wallpaper.ff";
 
 wchar_t *worddelimiters = L" ";
 
