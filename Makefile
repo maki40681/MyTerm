@@ -6,13 +6,7 @@ SRC = st.c x.c boxdraw.c hb.c
 OBJ = $(SRC:.c=.o)
 PREFIX = $(HOME)/.local
 
-all: options st
-
-options:
-	@echo st build options:
-	@echo "CFLAGS  = $(STCFLAGS)"
-	@echo "LDFLAGS = $(STLDFLAGS)"
-	@echo "CC      = $(CC)"
+all: st
 
 .c.o:
 	$(CC) $(STCFLAGS) -c $<
@@ -41,4 +35,4 @@ uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/st
 	rm -f $(DESTDIR)$(MANPREFIX)/man1/st.1
 
-.PHONY: all options install uninstall
+.PHONY: all install uninstall
