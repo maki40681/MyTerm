@@ -2743,8 +2743,16 @@ copyurl(const Arg *arg) {
 						sizeof(URLSTRINGS)/sizeof(URLSTRINGS[0]))))
 			break;
 
-		if (--row < 0)
-			row = term.row - 1;
+        /* .i = 0 --> botton-up
+         * .i = 1 --> top-down
+         * */
+        if (!arg->i) {
+            if (--row < 0)
+                row = term.row - 1;
+        } else {
+            if (++row >= term.row)
+                row = 0;
+        }
 
 		colend = term.col;
 	};

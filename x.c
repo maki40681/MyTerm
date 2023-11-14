@@ -764,6 +764,9 @@ cresize(int width, int height)
 	win.hborderpx = (win.w - col * win.cw) / 2;
 	win.vborderpx = (win.h - row * win.ch) / 2;
 
+	win.hborderpx = (win.w - col * win.cw) / 2;
+	win.vborderpx = (win.h - row * win.ch) / 2;
+
 	tresize(col, row);
 	xresize(col, row);
 	ttyresize(win.tw, win.th);
